@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  width: 90%;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.left-nav i,
+.right-nav i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.slider img {
+  width: 100%;
+
+}
