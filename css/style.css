@@ -41,8 +41,19 @@
   cursor: pointer;
 }
 
-
 .slider img {
   width: 100%;
+}
 
+.pallini {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pallini i {
+  font-size: 10px;
+  color: white;
+  margin: 0 10px;
 }

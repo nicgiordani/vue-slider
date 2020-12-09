@@ -29,6 +29,10 @@
         <div class="right-nav">
           <i class="fas fa-chevron-right" @click="avanti"></i>
         </div>
+
+        <div class="pallini">
+          <i v-for="(image, index) in images" :class="(index == imageIndex) ? 'fas' : 'far'" class="far fa-circle"></i>
+        </div>
       </div>
 
     </div>
