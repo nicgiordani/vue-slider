@@ -16,26 +16,14 @@
 
   <div id="root">
 
-    <div class="background">
+    <input type="text" name="" value="" v-model="newToDo" placeholder="inserisci cose da fare">
 
-      <div class="slider">
+    <button @click="addElement(item)">inserisci</button>
 
-        <div class="left-nav">
-          <i class="fas fa-chevron-left" @click="indietro"></i>
-        </div>
+    <ul>
+      <li v-for="(toDo, index) in toDoList">{{ toDo }} <strong @click="removeElement(index)">X</strong></li>
+    </ul>
 
-        <img :src="images[imageIndex]" alt="">
-
-        <div class="right-nav">
-          <i class="fas fa-chevron-right" @click="avanti"></i>
-        </div>
-
-        <div class="pallini">
-          <i v-for="(image, index) in images" :class="(index == imageIndex) ? 'fas' : 'far'" class="far fa-circle"></i>
-        </div>
-      </div>
-
-    </div>
 
   </div>
   <!-- link js -->
